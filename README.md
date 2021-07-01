@@ -2,22 +2,13 @@
 
 We are going to use the Brazilian [E-Commerce Public Dataset by Olist from Kaggle](https://www.kaggle.com/olistbr/brazilian-ecommerce) to predict customer churn.
 
-The data is divided in multiple datasets for better understanding and organization. 
+To do this, two different data mining techniques were applied.
 
-First, we merged all the datasets and calculated some new indicators that would facilitate our work  such as
-```
-order_purchase_year, 
-order_purchase_month, 
-order_purchase_dayofweek, 
-order_purchase_hour, 
-year_month, 
-ship_duration, 
-tocarrier_duration, 
-lastmile_duration, 
-expected_vs_shipdate, 
-expected_duration
+## Results
 
-```
-Then we dropped the missing values.
+First, the EDA was done to find out the overall situation in the store in the past years. There was a significant drop of sales and amount of customers in 2018. The same trend is visible per all states in Brazil. Potential causes of this loss were discussed. One of them is that the rival Amazon took the market at the end of 2017.
+
+The second important step was an actual prediction. 20\% of data was splited as  test data and other 80\% left as an actual data. Using data mining approach, the decision tree model was created with $94.8\%$ accuracy. In contrast, the random forest algorithm hit $97.9\%$ accuracy. Even though both models performed great, considering other factors as accuracy and sensitivity, random forest is definitely more accurate choice for prediction.
+
 
 
